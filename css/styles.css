@@ -233,6 +233,16 @@ body {
     margin-right: 30px;
 }
 
+.advantages-title::before {
+    content: '';
+    display: block;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+
+    background-color: #F5F4FA;
+}
+
  .advantages-title {
     margin-bottom: 10px;
 
@@ -310,8 +320,7 @@ body {
  }
 
  .team-content {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 32px;
 
     background-color: var(--first-bgd-color);
     
@@ -328,12 +337,33 @@ body {
  }
 
  .team-text {
+    margin-bottom: 16px;
+
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--text-color);
  }
+
+ .team-socials {
+     display: flex;
+ }
+
+ .team-socials-item + .team-socials-item {
+     margin-left: 10px;
+ }
+
+ .team-socials-link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    background-color: #555;
+ }
+
+ 
 
  /* CLIENTS */
 
@@ -492,6 +522,8 @@ body {
 }
 
 .footer-socials-title {
+    margin-bottom: 20px;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -503,5 +535,18 @@ body {
 
 .footer-socials-list {
     display: flex;
+}
+
+.footer-socials-item + .footer-socials-item {
+    margin-left: 10px;
+}
+
+.footer-socials-link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.1);
 }
 

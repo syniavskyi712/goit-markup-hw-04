@@ -135,9 +135,17 @@ body {
     margin-left: 50px;
 }
 
+.header-tel-icon,
+.header-mail-icon {
+    margin-right: 10px;
+
+    fill: currentColor;
+}
+
 .header-mail,
 .header-tel {
-    display: block;
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -152,7 +160,7 @@ body {
 .header-link:hover,
 .header-link:focus,
 .contact:hover,
-.contact:focus {
+.contact:focus{
     color: var(--accent-color);
 }
 
@@ -233,14 +241,15 @@ body {
     margin-right: 30px;
 }
 
-.advantages-title::before {
-    content: '';
-    display: block;
+.advantages-icon-bg {
+    width: 270px;
     height: 120px;
+    padding: 25px 100px;
     border-radius: 4px;
     margin-bottom: 30px;
-
-    background-color: #F5F4FA;
+    
+    background: #F5F4FA;
+    
 }
 
  .advantages-title {
@@ -347,23 +356,33 @@ body {
  }
 
  .team-socials {
-     display: flex;
+    display: flex;
  }
+
 
  .team-socials-item + .team-socials-item {
      margin-left: 10px;
  }
 
  .team-socials-link {
-    display: block;
+    display: inline-block;
     width: 44px;
     height: 44px;
+    padding: 12px;
     border-radius: 50%;
 
-    background-color: #555;
+    color: #AFB1B8;
  }
 
- 
+ .team-socials-icon {
+    fill: currentColor;
+ }
+
+ .team-socials-link:hover,
+ .team-socials-link:focus {
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+ }
 
  /* CLIENTS */
 
@@ -383,6 +402,32 @@ body {
 
  .clients-list {
      display: flex;
+ }
+
+ .clients-link {
+    display: inline-block;
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    color: #AFB1B8;
+ }
+
+ .clients-link:hover,
+ .clients-link:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+ }
+
+ .clients-item + .clients-item {
+    margin-left: 30px;
+ }
+
+ .clients-icon {
+     fill: currentColor;
  }
 
 /* ---------- MAIN PORTFOLIO.HTML ----------- */
@@ -542,11 +587,22 @@ body {
 }
 
 .footer-socials-link {
-    display: block;
+    display: inline-block;
     width: 44px;
     height: 44px;
+    padding: 12px;
     border-radius: 50%;
 
+    color: #FFFFFF;
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-socials-icon {
+    fill: currentColor;
+}
+
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+    background-color: var(--accent-color);
 }
 
